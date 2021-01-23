@@ -1,1 +1,0 @@
-initSidebarItems({"struct":[["LoggerReturn",""]],"type":[["LogType",""],["Logger",""]]});

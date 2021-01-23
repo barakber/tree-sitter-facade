@@ -1,3 +1,3 @@
 (function() {var implementors = {};
-implementors["tree_sitter_facade"] = [{"text":"impl&lt;'tree&gt; StructuralEq for Node&lt;'tree&gt;","synthetic":false,"types":[]}];
+implementors["tree_sitter_facade"] = [{"text":"impl StructuralEq for IncludedRangesError","synthetic":false,"types":[]},{"text":"impl StructuralEq for QueryError","synthetic":false,"types":[]},{"text":"impl StructuralEq for LanguageError","synthetic":false,"types":[]},{"text":"impl StructuralEq for ParserError","synthetic":false,"types":[]},{"text":"impl StructuralEq for InputEdit","synthetic":false,"types":[]},{"text":"impl&lt;'tree&gt; StructuralEq for Node&lt;'tree&gt;","synthetic":false,"types":[]}];
 if (window.register_implementors) {window.register_implementors(implementors);} else {window.pending_implementors = implementors;}})()

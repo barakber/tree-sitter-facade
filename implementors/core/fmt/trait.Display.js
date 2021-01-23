@@ -1,0 +1,3 @@
+(function() {var implementors = {};
+implementors["tree_sitter_facade"] = [{"text":"impl Display for IncludedRangesError","synthetic":false,"types":[]},{"text":"impl Display for QueryError","synthetic":false,"types":[]},{"text":"impl Display for LanguageError","synthetic":false,"types":[]},{"text":"impl Display for ParserError","synthetic":false,"types":[]}];
+if (window.register_implementors) {window.register_implementors(implementors);} else {window.pending_implementors = implementors;}})()

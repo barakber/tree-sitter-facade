@@ -1,3 +1,3 @@
 (function() {var implementors = {};
-implementors["tree_sitter_facade"] = [{"text":"impl Default for Parser","synthetic":false,"types":[]}];
+implementors["tree_sitter_facade"] = [{"text":"impl Default for InputEdit","synthetic":false,"types":[]},{"text":"impl Default for Point","synthetic":false,"types":[]},{"text":"impl Default for Range","synthetic":false,"types":[]}];
 if (window.register_implementors) {window.register_implementors(implementors);} else {window.pending_implementors = implementors;}})()

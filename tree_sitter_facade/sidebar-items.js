@@ -1,1 +1,1 @@
-initSidebarItems({"mod":[["error",""],["input_edit",""],["language",""],["logger",""],["node",""],["parser",""],["point",""],["query",""],["range",""],["tree",""],["tree_cursor",""]]});
+initSidebarItems({"struct":[["IncludedRangesError",""],["InputEdit",""],["Language",""],["LanguageError",""],["LoggerReturn",""],["Node",""],["Parser",""],["ParserError",""],["Point",""],["Query",""],["QueryError",""],["Range",""],["Tree",""],["TreeCursor",""]],"type":[["LogType",""],["Logger",""]]});
