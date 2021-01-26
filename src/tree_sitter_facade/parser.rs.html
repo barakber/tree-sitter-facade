@@ -343,6 +343,9 @@
 <span id="340">340</span>
 <span id="341">341</span>
 <span id="342">342</span>
+<span id="343">343</span>
+<span id="344">344</span>
+<span id="345">345</span>
 </pre><div class="example-wrap"><pre class="rust ">
 <span class="comment">// FIXME: make .logger() return type uniform</span>
 
@@ -510,6 +513,9 @@
     <span class="kw">pub</span> <span class="kw">struct</span> <span class="ident">Parser</span> {
         <span class="ident">inner</span>: <span class="ident">web_tree_sitter</span>::<span class="ident">Parser</span>,
         <span class="ident">options</span>: <span class="ident">web_tree_sitter</span>::<span class="ident">ParseOptions</span>,
+    }
+
+    <span class="kw">unsafe</span> <span class="kw">impl</span> <span class="ident">Send</span> <span class="kw">for</span> <span class="ident">Parser</span> {
     }
 
     <span class="kw">impl</span> <span class="ident">Parser</span> {
