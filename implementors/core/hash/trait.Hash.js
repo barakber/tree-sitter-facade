@@ -1,3 +1,3 @@
 (function() {var implementors = {};
-implementors["tree_sitter_facade"] = [{"text":"impl&lt;'tree&gt; Hash for Node&lt;'tree&gt;","synthetic":false,"types":[]}];
+implementors["tree_sitter_facade"] = [{"text":"impl&lt;'tree&gt; <a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/hash/trait.Hash.html\" title=\"trait core::hash::Hash\">Hash</a> for <a class=\"struct\" href=\"tree_sitter_facade/struct.Node.html\" title=\"struct tree_sitter_facade::Node\">Node</a>&lt;'tree&gt;","synthetic":false,"types":["tree_sitter_facade::node::native::Node"]}];
 if (window.register_implementors) {window.register_implementors(implementors);} else {window.pending_implementors = implementors;}})()
