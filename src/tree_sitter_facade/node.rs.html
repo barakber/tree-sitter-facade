@@ -549,8 +549,6 @@
 <span id="546">546</span>
 <span id="547">547</span>
 <span id="548">548</span>
-<span id="549">549</span>
-<span id="550">550</span>
 </pre><div class="example-wrap"><pre class="rust ">
 <span class="attribute">#[<span class="ident">cfg</span>(<span class="ident">not</span>(<span class="ident">target_arch</span> <span class="op">=</span> <span class="string">&quot;wasm32&quot;</span>))]</span>
 <span class="kw">mod</span> <span class="ident">native</span> {
@@ -920,10 +918,10 @@
             <span class="self">self</span>.<span class="ident">inner</span>.<span class="ident">id</span>()
         }
 
-        <span class="comment">// #[inline]</span>
-        <span class="comment">// pub fn is_error(&amp;self) -&gt; bool {</span>
-        <span class="comment">//     unimplemented!()</span>
-        <span class="comment">// }</span>
+        <span class="attribute">#[<span class="ident">inline</span>]</span>
+        <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">is_error</span>(<span class="kw-2">&amp;</span><span class="self">self</span>) <span class="op">-</span><span class="op">&gt;</span> <span class="ident">bool</span> {
+            <span class="self">self</span>.<span class="ident">kind_id</span>() <span class="op">=</span><span class="op">=</span> <span class="ident">u16</span>::<span class="ident">MAX</span>
+        }
 
         <span class="comment">// #[inline]</span>
         <span class="comment">// pub fn is_extra(&amp;self) -&gt; bool {</span>
@@ -940,17 +938,15 @@
             <span class="self">self</span>.<span class="ident">inner</span>.<span class="ident">is_named</span>()
         }
 
-        <span class="comment">// FIXME: check that this is correct</span>
         <span class="attribute">#[<span class="ident">inline</span>]</span>
         <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">kind</span>(<span class="kw-2">&amp;</span><span class="self">self</span>) <span class="op">-</span><span class="op">&gt;</span> <span class="ident">Cow</span><span class="op">&lt;</span><span class="ident">str</span><span class="op">&gt;</span> {
             <span class="ident">From</span>::<span class="op">&lt;</span><span class="ident">String</span><span class="op">&gt;</span>::<span class="ident">from</span>(<span class="self">self</span>.<span class="ident">inner</span>.<span class="ident">type_</span>().<span class="ident">into</span>())
         }
 
-        <span class="comment">// FIXME: does this map to anything?</span>
-        <span class="comment">// #[inline]</span>
-        <span class="comment">// pub fn kind_id(&amp;self) -&gt; u16 {</span>
-        <span class="comment">//     unimplemented!()</span>
-        <span class="comment">// }</span>
+        <span class="attribute">#[<span class="ident">inline</span>]</span>
+        <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">kind_id</span>(<span class="kw-2">&amp;</span><span class="self">self</span>) <span class="op">-</span><span class="op">&gt;</span> <span class="ident">u16</span> {
+            <span class="self">self</span>.<span class="ident">inner</span>.<span class="ident">type_id</span>()
+        }
 
         <span class="comment">// #[inline]</span>
         <span class="comment">// pub fn language(&amp;self) -&gt; Language {</span>
