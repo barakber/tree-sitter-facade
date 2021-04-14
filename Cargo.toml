@@ -21,7 +21,7 @@ opt-level = "z"
 [features]
 
 [dependencies]
-anyhow = "1.0"
+anyhow = { git = "https://github.com/dtolnay/anyhow", rev = "0ba6408b5ef508c3dfc95797d21cfbdca9dd64ee" }
 
 [target.'cfg(not(target_arch = "wasm32"))'.dependencies]
 tree-sitter = "0.19"
